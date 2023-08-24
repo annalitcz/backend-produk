@@ -29,6 +29,10 @@ const products = [
   },
 ];
 
+app.get("/", (req, res) =>{
+  res.send("<h1>Welcome To my API</h1>");
+})
+
 app.get("/products", (req, res) => {
   res.json(products);
 });
